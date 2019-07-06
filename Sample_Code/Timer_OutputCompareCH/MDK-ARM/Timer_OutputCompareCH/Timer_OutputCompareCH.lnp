@@ -1,0 +1,24 @@
+--cpu=Cortex-M4.fp
+"timer_outputcomparech\startup_stm32f407xx.o"
+"timer_outputcomparech\main.o"
+"timer_outputcomparech\stm32f4xx_it.o"
+"timer_outputcomparech\stm32f4xx_hal_msp.o"
+"timer_outputcomparech\stm32f4xx_hal_tim.o"
+"timer_outputcomparech\stm32f4xx_hal_tim_ex.o"
+"timer_outputcomparech\stm32f4xx_hal_rcc.o"
+"timer_outputcomparech\stm32f4xx_hal_rcc_ex.o"
+"timer_outputcomparech\stm32f4xx_hal_flash.o"
+"timer_outputcomparech\stm32f4xx_hal_flash_ex.o"
+"timer_outputcomparech\stm32f4xx_hal_flash_ramfunc.o"
+"timer_outputcomparech\stm32f4xx_hal_gpio.o"
+"timer_outputcomparech\stm32f4xx_hal_dma_ex.o"
+"timer_outputcomparech\stm32f4xx_hal_dma.o"
+"timer_outputcomparech\stm32f4xx_hal_pwr.o"
+"timer_outputcomparech\stm32f4xx_hal_pwr_ex.o"
+"timer_outputcomparech\stm32f4xx_hal_cortex.o"
+"timer_outputcomparech\stm32f4xx_hal.o"
+"timer_outputcomparech\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "Timer_OutputCompareCH\Timer_OutputCompareCH.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Timer_OutputCompareCH.map" -o Timer_OutputCompareCH\Timer_OutputCompareCH.axf

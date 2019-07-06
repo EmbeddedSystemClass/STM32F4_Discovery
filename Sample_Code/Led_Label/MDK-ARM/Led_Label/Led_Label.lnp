@@ -1,0 +1,24 @@
+--cpu=Cortex-M4.fp
+"led_label\startup_stm32f407xx.o"
+"led_label\main.o"
+"led_label\stm32f4xx_it.o"
+"led_label\stm32f4xx_hal_msp.o"
+"led_label\stm32f4xx_hal_tim.o"
+"led_label\stm32f4xx_hal_tim_ex.o"
+"led_label\stm32f4xx_hal_rcc.o"
+"led_label\stm32f4xx_hal_rcc_ex.o"
+"led_label\stm32f4xx_hal_flash.o"
+"led_label\stm32f4xx_hal_flash_ex.o"
+"led_label\stm32f4xx_hal_flash_ramfunc.o"
+"led_label\stm32f4xx_hal_gpio.o"
+"led_label\stm32f4xx_hal_dma_ex.o"
+"led_label\stm32f4xx_hal_dma.o"
+"led_label\stm32f4xx_hal_pwr.o"
+"led_label\stm32f4xx_hal_pwr_ex.o"
+"led_label\stm32f4xx_hal_cortex.o"
+"led_label\stm32f4xx_hal.o"
+"led_label\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "Led_Label\Led_Label.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Led_Label.map" -o Led_Label\Led_Label.axf
